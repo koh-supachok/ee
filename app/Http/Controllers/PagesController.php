@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use DB;
 
 class PagesController extends Controller
 {
@@ -24,10 +25,11 @@ class PagesController extends Controller
 	public function ekarat()
 	{
 		$user = Auth::user();
+		$scan = DB::connection('mysql2')->select('select * from en_scan where id = :id', ['id' => 1]);
 		if ($user)
 		{
-			return view('test.solar',compact('name','user'));
+			return view('test.solar',compact('name','user','scan'));
 		}
-		return view('test.solar',compact('name','user'));
+		return view('test.solar',compact('name','user','scan'));
 	}
 }
