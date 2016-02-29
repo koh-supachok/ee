@@ -32,4 +32,15 @@ class PagesController extends Controller
 		}
 		return view('test.solar',compact('name','user','scan'));
 	}
+
+	public function en_scan()
+	{
+		$user = Auth::user();
+		$scan = DB::connection('mysql2')->select('select * from en_scan_log ORDER BY ca_dt DESC ');
+		if ($user)
+		{
+			return view('test.en_scan_result',compact('name','user','scan'));
+		}
+		return view('test.solar',compact('name','user','scan'));
+	}
 }

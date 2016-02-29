@@ -13,6 +13,7 @@
 Route::get('contact','WelcomeController@contact');
 Route::get('about','PagesController@about');
 Route::get('ekarat','PagesController@ekarat');
+Route::get('en_scan','PagesController@en_scan');
 Route::get('home', 'HomeController@index');
 
 Route::get('/', function () {
