@@ -116,34 +116,3 @@ let menu, animate;
   // Auto update menu collapsed/expanded based on the themeConfig
   window.Helpers.setCollapsed(true, false);
 })();
-
-$("#formAuthentication").submit(function(event){
-  if(true) { 
-     event.preventDefault();  
-proceed();
-  }  
-});
-
-function proceed() {
-  var formdata = $('form').serialize();
-  var url = "https://prod-47.southeastasia.logic.azure.com/workflows/d7145af3c1af4eedb04e18bc56a3218c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=zpTwham4ZwTYLylH3tV8baH1oNRUAdxYQYkylCzHSGw";
-  
-  console.log(formdata );
-  
-  fetch( url+"&State=Auth&Accesscode=@{triggerOutputs()['queries']['Accesscode']}"+"&"+formdata , {
-    "method": "GET",
-    "headers": {
-      "user-agent": "vscode-restclient",
-      "Content-Type": "text/html; charset=utf-8",
-    }
-  })
-         .then( response => response.text() )
-         .then( result => {
-            let parser = new DOMParser();
-            doc = parser.parseFromString( result, 'text/html' );
-            document.replaceChild( doc.documentElement, document.documentElement );
-          } )
-  .catch(err => {
-    console.error(err);
-  });
-  }
