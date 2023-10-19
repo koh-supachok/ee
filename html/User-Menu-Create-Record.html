@@ -52,7 +52,11 @@
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="https://ashy-coast-0fc044900.3.azurestaticapps.net/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+    <link
+    href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
+    rel="stylesheet"
+    />
     <!-- Page CSS -->
     <!-- Page -->
     <link rel="stylesheet" href="https://ashy-coast-0fc044900.3.azurestaticapps.net/assets/vendor/css/pages/page-auth.css" />
@@ -77,109 +81,125 @@
               <div class="app-brand justify-content-center">
                 <a href="index.html" class="app-brand-link gap-2">
                   <span class="app-brand-logo demo">
-                    <svg
-                      width="25"
-                      viewBox="0 0 25 42"
-                      version="1.1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <defs>
-                        <path
-                          d="M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z"
-                          id="path-1"
-                        ></path>
-                        <path
-                          d="M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z"
-                          id="path-3"
-                        ></path>
-                        <path
-                          d="M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z"
-                          id="path-4"
-                        ></path>
-                        <path
-                          d="M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z"
-                          id="path-5"
-                        ></path>
-                      </defs>
-                      <g id="g-app-brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Brand-Logo" transform="translate(-27.000000, -15.000000)">
-                          <g id="Icon" transform="translate(27.000000, 15.000000)">
-                            <g id="Mask" transform="translate(0.000000, 8.000000)">
-                              <mask id="mask-2" fill="white">
-                                <use xlink:href="#path-1"></use>
-                              </mask>
-                              <use fill="#696cff" xlink:href="#path-1"></use>
-                              <g id="Path-3" mask="url(#mask-2)">
-                                <use fill="#696cff" xlink:href="#path-3"></use>
-                                <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use>
-                              </g>
-                              <g id="Path-4" mask="url(#mask-2)">
-                                <use fill="#696cff" xlink:href="#path-4"></use>
-                                <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-4"></use>
-                              </g>
-                            </g>
-                            <g
-                              id="Triangle"
-                              transform="translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) "
-                            >
-                              <use fill="#696cff" xlink:href="#path-5"></use>
-                              <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-5"></use>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </svg>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100%" viewBox="0 0 605 493" enable-background="new 0 0 605 493" xml:space="preserve">
+<path fill="#FFFEFE" opacity="1.000000" stroke="none" 
+	d="
+M426.000000,494.000000 
+	C284.032196,494.000000 142.564423,494.000000 1.048315,494.000000 
+	C1.048315,329.736298 1.048315,165.472580 1.048315,1.104425 
+	C202.551102,1.104425 404.102264,1.104425 605.826721,1.104425 
+	C605.826721,165.333176 605.826721,329.666565 605.826721,494.000000 
+	C546.139282,494.000000 486.319641,494.000000 426.000000,494.000000 
+M189.425507,458.917633 
+	C286.440399,347.557800 383.455261,236.198013 480.470154,124.838203 
+	C480.832886,125.037971 481.195618,125.237747 481.558380,125.437523 
+	C480.903351,196.309814 480.248352,267.182098 479.585632,338.886169 
+	C521.220825,338.886169 562.091797,338.886169 602.953979,338.886169 
+	C602.953979,227.563171 602.953979,116.184219 602.953979,4.752308 
+	C601.532837,4.679924 600.539612,4.585197 599.546448,4.585063 
+	C540.881409,4.577120 482.216339,4.616861 423.551666,4.478703 
+	C419.967651,4.470262 418.124512,6.242618 416.136688,8.533132 
+	C353.151947,81.109489 290.161652,153.681030 227.156754,226.239868 
+	C153.667862,310.872498 80.162415,395.490753 6.683062,480.131653 
+	C5.343285,481.674957 4.239743,483.423370 2.336345,486.015137 
+	C5.498218,486.015137 7.441397,485.989685 9.383740,486.019226 
+	C22.203184,486.214264 35.021969,486.460663 47.841862,486.616608 
+	C85.315941,487.072540 122.790092,487.541687 160.265625,487.803223 
+	C162.377319,487.817932 165.076981,486.543457 166.523987,484.969147 
+	C174.186569,476.632416 181.535690,468.007599 189.425507,458.917633 
+M437.500000,365.043884 
+	C394.685791,365.043884 351.871460,365.095093 309.057678,364.959534 
+	C305.058685,364.946869 302.346588,366.027039 299.655151,369.088409 
+	C272.178497,400.341736 244.537582,431.450592 216.949493,462.605988 
+	C209.724365,470.765350 202.523071,478.945862 194.581848,487.942505 
+	C331.176270,488.678406 466.604553,489.408020 602.033508,490.137634 
+	C602.033508,448.084198 602.033508,406.825836 602.033508,365.043884 
+	C547.356140,365.043884 492.928070,365.043884 437.500000,365.043884 
+z"/>
+<path fill="#E14024" opacity="1.000000" stroke="none" 
+	d="
+M189.209473,459.200134 
+	C181.535690,468.007599 174.186569,476.632416 166.523987,484.969147 
+	C165.076981,486.543457 162.377319,487.817932 160.265625,487.803223 
+	C122.790092,487.541687 85.315941,487.072540 47.841862,486.616608 
+	C35.021969,486.460663 22.203184,486.214264 9.383740,486.019226 
+	C7.441397,485.989685 5.498218,486.015137 2.336345,486.015137 
+	C4.239743,483.423370 5.343285,481.674957 6.683062,480.131653 
+	C80.162415,395.490753 153.667862,310.872498 227.156754,226.239868 
+	C290.161652,153.681030 353.151947,81.109489 416.136688,8.533132 
+	C418.124512,6.242618 419.967651,4.470262 423.551666,4.478703 
+	C482.216339,4.616861 540.881409,4.577120 599.546448,4.585063 
+	C600.539612,4.585197 601.532837,4.679924 602.953979,4.752308 
+	C602.953979,116.184219 602.953979,227.563171 602.953979,338.886169 
+	C562.091797,338.886169 521.220825,338.886169 479.585632,338.886169 
+	C480.248352,267.182098 480.903351,196.309814 481.558380,125.437523 
+	C481.195618,125.237747 480.832886,125.037971 480.470154,124.838203 
+	C383.455261,236.198013 286.440399,347.557800 189.209473,459.200134 
+z"/>
+<path fill="#E14024" opacity="1.000000" stroke="none" 
+	d="
+M438.000000,365.043884 
+	C492.928070,365.043884 547.356140,365.043884 602.033508,365.043884 
+	C602.033508,406.825836 602.033508,448.084198 602.033508,490.137634 
+	C466.604553,489.408020 331.176270,488.678406 194.581848,487.942505 
+	C202.523071,478.945862 209.724365,470.765350 216.949493,462.605988 
+	C244.537582,431.450592 272.178497,400.341736 299.655151,369.088409 
+	C302.346588,366.027039 305.058685,364.946869 309.057678,364.959534 
+	C351.871460,365.095093 394.685791,365.043884 438.000000,365.043884 
+z"/>
+</svg>
                   </span>
                   <span class="app-brand-text demo text-body fw-bolder"></span>
                 </a>
               </div>
               <!-- /Logo -->
               <h4 class="mb-2">ระบบขออนุมัติลาฉุกเฉิน</h4>
-              <p class="mb-2">คุณ </p>
+              <p class="mb-2">@{outputs('Get_item_2')?['body/field_1']}</p>
 
               <div class="card-body">
                 <small class="fw-semibold">บันทึกข้อมูลขอลาฉุกเฉิน</small>
                 <div class="row mt-3 gap-2">
-                    <form class="d-grid gap-2 col-lg-6 mx-auto" action="https://prod-47.southeastasia.logic.azure.com/workflows/d7145af3c1af4eedb04e18bc56a3218c/triggers/manual/paths/invoke" method="GET">
+                    <form class="d-grid gap-2 col-lg-12 mx-auto" action="https://prod-47.southeastasia.logic.azure.com/workflows/d7145af3c1af4eedb04e18bc56a3218c/triggers/manual/paths/invoke" method="GET">
                         <input type="hidden" name="api-version" value="2016-06-01"/>
                         <input type="hidden" name="sp" value="/triggers/manual/run"/>  
                         <input type="hidden" name="sv" value="1.0"/>  
                         <input type="hidden" name="sig" value="zpTwham4ZwTYLylH3tV8baH1oNRUAdxYQYkylCzHSGw"/>  
                         <input type="hidden" name="State" value="RECD"/> 
+                        <input type="hidden" name="userid" value="@{outputs('Userid')}"/> 
                         <input type="hidden" name="Username" value="@{triggerOutputs()['queries']['Username']}"/> 
                         <input type="hidden" name="Accesscode" value="@{triggerOutputs()['queries']['Accesscode']}"/> 
-                        <input type="hidden" name="userid" value="@{outputs('Get_record_emp_id')}"/> 
                           <div class="mb-3">
                             <label class="form-label" for="basic-default-message">วันที่ลาฉุกเฉิน </label>
-                            <input class="form-control" type="date" value="2021-06-18" id="html5-date-input" />
+                            <input class="form-control" name="edate" type="date" value="@{formatDateTime(utcNow(), 'yyyy-MM-dd')}" id="edate" required/>
                           </div>
                           <div class="mb-3">
                             <label class="form-label" for="basic-default-message">ตั้งแต่เวลา </label>
-                            <input class="form-control" type="time" value="12:30:00" id="html5-time-input" />
+                            <input class="form-control" type="time" name="estart" value="07:30:00" id="html5-time-input" required/>
                           </div>
                           <div class="mb-3">
                             <label class="form-label" for="basic-default-message">ถึงเวลา </label>
-                            <input class="form-control" type="time" value="12:30:00" id="html5-time-input" />
+                            <input class="form-control" type="time" name="eend" value="09:30:00" id="html5-time-input" required/>
                           </div>
                           <div class="col-md">
                             <small>ประเภทการลา</small>
                             <div class="form-check mt-3">
                               <input
-                                name="default-radio-1"
+                                name="etype"
                                 class="form-check-input"
                                 type="radio"
-                                value=""
+                                value="ลากิจ"
                                 id="defaultRadio1"
+                                required
                               />
                               <label class="form-check-label" for="defaultRadio1"> ลากิจ </label>
                             </div>
                             <div class="form-check">
                               <input
-                                name="default-radio-1"
+                                name="etype"
                                 class="form-check-input"
                                 type="radio"
-                                value=""
+                                value="ลาป่วย"
                                 id="defaultRadio2"
                               />
                               <label class="form-check-label" for="defaultRadio2"> ลาป่วย </label>
@@ -189,11 +209,27 @@
                             <label class="form-label" for="basic-default-message">สาเหตุการลา</label>
                             <textarea
                               id="basic-default-message"
+                              name="ereason"
                               class="form-control"
                               placeholder="ระบุสาเหตุประกอบการลา"
-                            ></textarea>
+                              required></textarea>
                           </div>
-                        <button class="btn btn-primary btn-lg" type="submit">ยื่นคำขอ</button>
+                          <div class="mb-3">
+                            <label for="formFileMultiple" class="form-label">แนบไฟล์ประกอบ</label>
+                            <!-- <input class="form-control" type="file" id="formFileMultiple" name="eattached" multiple /> -->
+                            <form>
+                            <input type="file" 
+                              class="filepond"
+                              name="filepond" 
+                              form="asdf"
+                              multiple 
+                              data-allow-reorder="true"
+                              data-max-file-size="3MB"
+                              data-max-files="3"
+                              data-file-metadata-sessionid="session-new"
+                              accept="image/png, image/jpeg"></form>
+                          </div>
+                        <button class="btn btn-primary btn-lg" type="submit" onclick="inputElement.style.visibility = 'hidden';FilePond.destroy(inputElement);this.form.submit(); this.disabled = true;">ยื่นคำขอ</button>
                     </form>
                 </div>
               </div>
@@ -217,12 +253,125 @@
     <!-- endbuild -->
 
     <!-- Vendors JS -->
-
+    <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+    <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.js"></script>
     <!-- Main JS -->
     <script src="https://ashy-coast-0fc044900.3.azurestaticapps.net/assets/js/main.js"></script>
 
     <!-- Page JS -->
+    <script>
+      // Get a reference to the file input element
 
+      FilePond.registerPlugin(
+        FilePondPluginImagePreview,
+        FilePondPluginFileMetadata
+      );
+
+      const inputElement = document.querySelector('input[type="file"]');
+
+      // Create a FilePond instance
+      const pond = FilePond.create(inputElement);
+
+      var fileid = 0
+
+      FilePond.setOptions({
+        server: {
+          // url: 'https://prod-27.southeastasia.logic.azure.com:443/workflows/0392fb5c4f2b4460b7fc396730b321a1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=DIWbt0NbzQqEoyS7tWapNzpOBjXiE1O4yYIM2eUneak',
+          process: {
+            url: 'https://prod-27.southeastasia.logic.azure.com:443/workflows/0392fb5c4f2b4460b7fc396730b321a1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=DIWbt0NbzQqEoyS7tWapNzpOBjXiE1O4yYIM2eUneak',
+            method: 'POST',
+            withCredentials: false,
+            headers: {
+              'empid': '12345',
+              'file_id': fileid,
+              'type': 'ADD',
+            },
+            timeout: 7000,
+            onload: null,
+            onerror: null,
+            ondata: null,
+          },
+          revert: {
+            url: 'https://prod-27.southeastasia.logic.azure.com:443/workflows/0392fb5c4f2b4460b7fc396730b321a1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=DIWbt0NbzQqEoyS7tWapNzpOBjXiE1O4yYIM2eUneak',
+            method: 'POST',
+            withCredentials: false,
+            headers: {
+              'empid': '12345',
+              'file_id': fileid,
+              'type': 'DEL',
+            },
+            timeout: 7000,
+            onload: null,
+            onerror: null,
+            ondata: null,
+          },
+        },
+      });
+
+
+
+      // listen for events
+      pond.on('addfile', (error, file) => {
+        if (error) {
+          console.log('Oh no');
+          return;
+        }
+        console.log('File added', file.id);
+        fileid = file.id;
+        FilePond.setOptions({
+          server: {
+            // url: 'https://prod-27.southeastasia.logic.azure.com:443/workflows/0392fb5c4f2b4460b7fc396730b321a1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=DIWbt0NbzQqEoyS7tWapNzpOBjXiE1O4yYIM2eUneak',
+            process: {
+              url: 'https://prod-27.southeastasia.logic.azure.com:443/workflows/0392fb5c4f2b4460b7fc396730b321a1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=DIWbt0NbzQqEoyS7tWapNzpOBjXiE1O4yYIM2eUneak',
+              method: 'POST',
+              withCredentials: false,
+              headers: {
+                'empid': '12345',
+                'file_id': fileid,
+                'type': 'ADD',
+              },
+              timeout: 7000,
+              onload: null,
+              onerror: null,
+              ondata: null,
+            },
+            revert: {
+              url: 'https://prod-27.southeastasia.logic.azure.com:443/workflows/0392fb5c4f2b4460b7fc396730b321a1/triggers/manual/paths/invoke?api-version=2016-06-01&sp=/triggers/manual/run&sv=1.0&sig=DIWbt0NbzQqEoyS7tWapNzpOBjXiE1O4yYIM2eUneak',
+              method: 'POST',
+              withCredentials: false,
+              headers: {
+                'empid': '12345',
+                'file_id': fileid,
+                'type': 'DEL',
+              },
+              timeout: 7000,
+              onload: null,
+              onerror: null,
+              ondata: null,
+            },
+          },
+        });
+
+      });
+      pond.on('removefile', (error, file) => {
+        if (error) {
+          console.log('Oh no');
+          return;
+        }
+        console.log('File removed', file.id);
+
+      });
+      pond.on('addfilestart', (error, file) => {
+        if (error) {
+          console.log('Oh no');
+          return;
+        }
+        console.log('addfilestart', file.id);
+        fileid = file.id;
+      });
+    </script>
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
